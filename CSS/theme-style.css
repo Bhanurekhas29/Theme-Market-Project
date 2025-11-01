@@ -1,21 +1,18 @@
  * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: poppins;
-        }
-        
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: poppins;
+   }      
 
-       
-
-        .navbar {
-            background: linear-gradient(135deg, #5b2c91 0%, #4a1f7a 100%);
-            padding: 15px 60px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-        }
+.navbar {
+     background: linear-gradient(135deg, #5b2c91 0%, #4a1f7a 100%);
+     padding: 15px 60px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
 
         .logo {
             font-family: 'Brush Script MT', cursive;
@@ -58,13 +55,6 @@
             gap: 20px;
             align-items: center;
         }
-
-        
-
-
-
-
-
         .icon-btn {
             background: none;
             border: none;
@@ -142,6 +132,24 @@
             font-weight: 500;
             margin-bottom: 30px;
             box-shadow: 0 4px 12px rgba(91, 44, 145, 0.3);
+            animation: pressZoom 2s infinite alternate ease-in-out;
+            transform: scale(1);
+        }
+
+ /* Keyframes for the "pressZoom" animation */
+        @keyframes pressZoom {
+            0% {
+                transform: scale(1); /* Starting "unpressed" size */
+                box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.25); /* "Unpressed" shadow */
+            }
+            50% {
+                transform: scale(0.95); /* Zoom in (smaller) for "pressed" look */
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15), inset 0 1px 3px rgba(0, 0, 0, 0.2); /* "Pressed" shadow */
+            }
+            100% {
+                transform: scale(1); /* Back to "unpressed" size */
+                box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.25); /* "Unpressed" shadow */
+            }
         }
 
         .main-heading {
@@ -2449,6 +2457,7 @@
         }
 
     }
+
 
 
 
