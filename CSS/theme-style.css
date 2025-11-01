@@ -2366,7 +2366,7 @@
     width: 60%;
     height: 300px;
     /* background-color: powderblue; */
-    background: url(Images/hqdefault.jpg) no-repeat;
+    background: url(../Images/hqdefault.jpg) no-repeat;
     background-size: cover;
     border-radius: 20px;
     top: -20px;
@@ -2381,7 +2381,7 @@
     width: 40%;
     height: 133px;
     /* background-color: lightseagreen; */
-    background: url(Images/taste-the-world.jpg) no-repeat;
+    background: url(../Images/taste-the-world.jpg) no-repeat;
     background-size: cover;
     border-radius: 20px;
     top: 0;
@@ -2396,7 +2396,7 @@
     position: absolute;
     width: 100%;
     height: 400px;
-    background: url(Images/travel.jpg) no-repeat;
+    background: url(../Images/travel.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 20px;
@@ -2410,7 +2410,7 @@
     position: absolute;
     width: 45%;
     height: 133px;
-    background: url(Images/notjustfood.jpeg) no-repeat;
+    background: url(../Images/notjustfood.jpeg) no-repeat;
     background-size: cover;
     border-radius: 20px;
     top: 398px;
@@ -2449,3 +2449,4 @@
         }
 
     }
+
