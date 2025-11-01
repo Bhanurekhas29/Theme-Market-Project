@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+header {
+    width: 100%;
+    height: 120px;
+    /* background-color: #431a97; */
+    background: linear-gradient(135deg, #5b2c91 0%, #4a1f7a 100%);
+}
+
+.logo-tm {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 32px;
+    color: white;
+    font-style: italic;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.nav-menu a, .logo-tm {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-bar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:35px;
+}
+
+.nav-bar ul li {
+    list-style-type: none;
+    font-size: 18px;
+}
+
+.fa-user-circle, .fa-shopping-cart {
+    font-size: 26px;    
+    color: #76c01d;
+    text-decoration: none;
+    text-align: center;
+    padding-left: 20px;
+
+    /* background-color: #431a97; */
+}
+
+
+
+
+/* ---------------------------------------- hero section ---------------------------------------------------- */
+.hero-section {
+    width: 100%;
+    height: auto;
+    /* background-color: grey; */
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+}
+
+.hero-left, .hero-right {
+    flex:1;
+    text-align: center;
+    width: 100%;
+    height: 600px;
+    padding: 20px;
+    margin: 5px;
+    /* background-color: white; */
+    /* border: 4px solid blue; */
+}
+
+/* .hero-left {
+    
+    
+}*/
+
+.hero-cards {
+   /* display: flex; */
+   /* flex-direction: column; */
+   /* gap: 70px; */
+   position: relative;
+   padding: 20px;
+} 
+
+.hero-card-1 {
+    position: absolute;
+    width: 60%;
+    height: 300px;
+    /* background-color: powderblue; */
+    background: url(/Images/hqdefault.jpg) no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    top: -20px;
+    /* bottom: 25px; */
+    z-index: 1;
+    animation: card1Zoom 3s infinite alternate ease-in-out;
+    transform: scale(1);
+}
+
+.hero-card-2 {
+    position: absolute;
+    width: 40%;
+    height: 133px;
+    /* background-color: lightseagreen; */
+    background: url(/Images/taste-the-world.jpg) no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    top: 0;
+    right: 8px;
+    /* z-index: 1; */
+    animation: cardUpDown 3s infinite alternate ease-in-out; 
+    transform: scale(1);
+    
+}
+
+.hero-card-3 {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    background: url(/Images/travel.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    top: 75px;
+    z-index: 2;
+    animation: cardUpDown 5s infinite alternate ease-in-out; 
+    transform: scale(1);
+}
+
+.hero-card-4 {
+    position: absolute;
+    width: 45%;
+    height: 133px;
+    background: url(/Images/notjustfood.jpeg) no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    top: 398px;
+    right: 35px;
+    animation: card1Zoom 3s infinite alternate ease-in-out;
+    transform: scale(1);
+}
+
+
+ /* Keyframes for the "cardZoom" animation */
+    @keyframes card1Zoom {
+        0% {
+            transform: scale(1); /* Starting "unpressed" size */
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.25); /* "Unpressed" shadow */
+        }
+        50% {
+            transform: scale(0.95); /* Zoom in (smaller) for "pressed" look */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15), inset 0 1px 3px rgba(0, 0, 0, 0.2); /* "Pressed" shadow */
+        }
+        100% {
+            transform: scale(1); /* Back to "unpressed" size */
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.25); /* "Unpressed" shadow */
+        }
+    }
+
+    /* Keyframes for the "cardUpDown" animation */
+    @keyframes cardUpDown {
+        0% {
+            transform: translateY(0); /* Start at original position */
+        }
+        50% {
+            transform: translateY(-20px); /* Move up 20px */
+        }
+        100% {
+            transform: translateY(0); /* Return to original position */
+        }
+    }
+
+
+
+
+
+/*----------------------------------- hero section end ----------------------------*/
+.fifty-k {
+    width: 350px;
+    height: 40px;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #5b2c91 0%, #4a1f7a 100%);
+    color: white;
+    /* animation */
+    animation: pressZoom 2s infinite alternate ease-in-out;
+    transform: scale(1);
+    
+}
+
+ /* Keyframes for the "pressZoom" animation */
+    @keyframes pressZoom {
+        0% {
+            transform: scale(1); /* Starting "unpressed" size */
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.25); /* "Unpressed" shadow */
+        }
+        50% {
+            transform: scale(0.95); /* Zoom in (smaller) for "pressed" look */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15), inset 0 1px 3px rgba(0, 0, 0, 0.2); /* "Pressed" shadow */
+        }
+        100% {
+            transform: scale(1); /* Back to "unpressed" size */
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.25); /* "Unpressed" shadow */
+        }
+    }
